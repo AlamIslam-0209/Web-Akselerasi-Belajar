@@ -1,6 +1,6 @@
 # Agent Protocol & Definition of Done (`agent protocol.md`)
 
-**Overall Completion: 60%**
+**Overall Completion: 80%**
 
 Dokumen ini berisi *Standard Operating Procedure* (SOP) pengerjaan dan metrik kelulusan tugas agar semua agent bekerja dengan standar yang seragam.
 
@@ -43,3 +43,4 @@ Jika terjadi kegagalan sistematis (misal kode terus *error* setelah 3 kali diper
 |---|---|---|
 | Fase 2 | Overhaul UI/UX menggunakan tema Soft Pastel dan micro-interactions/animasi selesai dikerjakan oleh Gemini 3.5 Flash. | ✅ DONE |
 | Fase 3 | Logika integrasi app.js, fetching data JSON, dan sinkronisasi Local Storage selesai dikerjakan oleh Gemini 3.1 Pro (High) dan telah lulus inspeksi QA oleh GPT-OSS 120B ("MICRO-REVIEW PASSED"). | ✅ DONE |
+| Fase 4 | Ekspansi `data_materi.json` ke nested subbab (~350 subbab), penambahan widget Countdown (target 3 Agustus 2026), UI Accordion untuk bab→subbab, dan rombak total logika `app.js` ke subbab-based progress. Diorkestrasi oleh Claude Opus 4.6, dieksekusi oleh Gemini 3.1 Pro (Data) & Gemini 3.5 Flash (UI). QA: "MICRO-REVIEW PASSED". | ✅ DONE |

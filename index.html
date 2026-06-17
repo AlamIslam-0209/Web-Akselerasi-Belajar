@@ -163,6 +163,52 @@
             transform: translate(-50%, -50%) scale(1.1);
             opacity: 1;
         }
+
+        /* Accordion Styles */
+        .accordion-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0.625rem 0;
+            cursor: pointer;
+            border: none;
+            background: none;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: #525252;
+            transition: color 0.2s ease;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .accordion-toggle:hover {
+            color: #f97316;
+        }
+        .accordion-toggle .chevron {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+            color: #a3a3a3;
+        }
+        .accordion-toggle.active .chevron {
+            transform: rotate(180deg);
+            color: #f97316;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), padding 0.35s ease;
+            padding: 0 0 0 0.75rem;
+        }
+        .accordion-content.open {
+            max-height: 500px;
+            padding: 0.5rem 0 0.5rem 0.75rem;
+        }
+        .bab-completed {
+            color: #a3a3a3;
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body class="bg-[#faf7f2] text-neutral-800 min-h-screen font-sans selection:bg-orange-200 selection:text-orange-950 antialiased overflow-x-hidden relative">
@@ -173,7 +219,7 @@
 
     <!-- Header Section -->
     <header class="border-b border-neutral-200/50 bg-[#faf7f2]/75 backdrop-blur-xl sticky top-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4 flex-wrap">
             <div>
                 <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent sm:text-3xl font-sans">
                     Web Tracker Percepatan Belajar
@@ -183,6 +229,21 @@
                 </p>
             </div>
             
+            <!-- Countdown Widget -->
+            <div id="countdown-widget" class="bg-white/60 backdrop-blur-md border border-white/70 rounded-xl shadow-sm p-3 text-center">
+                <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-450 mb-2">⏱ Hitung Mundur Target</div>
+                <div class="flex gap-3 justify-center">
+                    <div class="text-center"><span id="countdown-days" class="text-xl font-extrabold text-orange-500 font-mono block">00</span><span class="text-[9px] uppercase font-bold text-neutral-400 tracking-wider">Hari</span></div>
+                    <div class="text-neutral-300 font-bold text-lg">:</div>
+                    <div class="text-center"><span id="countdown-hours" class="text-xl font-extrabold text-orange-500 font-mono block">00</span><span class="text-[9px] uppercase font-bold text-neutral-400 tracking-wider">Jam</span></div>
+                    <div class="text-neutral-300 font-bold text-lg">:</div>
+                    <div class="text-center"><span id="countdown-minutes" class="text-xl font-extrabold text-orange-500 font-mono block">00</span><span class="text-[9px] uppercase font-bold text-neutral-400 tracking-wider">Menit</span></div>
+                    <div class="text-neutral-300 font-bold text-lg">:</div>
+                    <div class="text-center"><span id="countdown-seconds" class="text-xl font-extrabold text-orange-500 font-mono block">00</span><span class="text-[9px] uppercase font-bold text-neutral-400 tracking-wider">Detik</span></div>
+                </div>
+                <div class="text-[10px] text-neutral-400 mt-1.5 font-medium">Target: 3 Agustus 2026</div>
+            </div>
+
             <!-- Global Progress Bar Card (Glassmorphism + Subtle Shadow) -->
             <div class="bg-white/70 border border-white/80 backdrop-blur-md rounded-xl p-4 flex flex-col min-w-[280px] md:min-w-[320px] shadow-[0_8px_30px_rgba(0,0,0,0.03)] relative overflow-hidden group">
                 <div class="absolute inset-0 bg-gradient-to-r from-orange-100/5 to-amber-100/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>

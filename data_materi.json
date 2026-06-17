@@ -6,11 +6,33 @@
     "semester_asal": 3,
     "sks_total": 3,
     "topik_inti": [
-      "Logika Proposisional",
-      "Teori Himpunan",
-      "Graf dan Pohon"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Logika Proposisional",
+        "subbab": [
+          {"nama": "Tabel Kebenaran", "is_completed": false},
+          {"nama": "Hukum-Hukum Logika (De Morgan, Distributif)", "is_completed": false},
+          {"nama": "Inferensi Logika (Modus Ponens, Tollens)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Teori Himpunan",
+        "subbab": [
+          {"nama": "Operasi Himpunan (Union, Intersect, Complement)", "is_completed": false},
+          {"nama": "Diagram Venn dan Hukum Himpunan", "is_completed": false},
+          {"nama": "Relasi dan Fungsi", "is_completed": false},
+          {"nama": "Prinsip Inklusi-Eksklusi", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Graf dan Pohon",
+        "subbab": [
+          {"nama": "Representasi Graf (Adjacency Matrix & List)", "is_completed": false},
+          {"nama": "Traversal Graf (BFS & DFS)", "is_completed": false},
+          {"nama": "Spanning Tree dan Minimum Spanning Tree", "is_completed": false},
+          {"nama": "Shortest Path (Dijkstra, Floyd-Warshall)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_02",
@@ -19,11 +41,32 @@
     "semester_asal": 3,
     "sks_total": 3,
     "topik_inti": [
-      "Analisis Asimptotik",
-      "Notasi Big-O",
-      "Divide and Conquer"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Analisis Asimptotik",
+        "subbab": [
+          {"nama": "Best Case, Worst Case, Average Case", "is_completed": false},
+          {"nama": "Fungsi Pertumbuhan dan Perbandingannya", "is_completed": false},
+          {"nama": "Analisis Rekurensi (Master Theorem)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Notasi Big-O",
+        "subbab": [
+          {"nama": "Definisi Formal Big-O, Big-Omega, Big-Theta", "is_completed": false},
+          {"nama": "Kelas Kompleksitas (O(1), O(log n), O(n), O(n²))", "is_completed": false},
+          {"nama": "Menghitung Kompleksitas dari Pseudocode", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Divide and Conquer",
+        "subbab": [
+          {"nama": "Prinsip Dekomposisi Masalah", "is_completed": false},
+          {"nama": "Merge Sort dan Quick Sort", "is_completed": false},
+          {"nama": "Binary Search dan Variasinya", "is_completed": false},
+          {"nama": "Perbandingan dengan Brute Force", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_03",
@@ -32,11 +75,32 @@
     "semester_asal": 3,
     "sks_total": 2,
     "topik_inti": [
-      "Manajemen Proses",
-      "Manajemen Memori",
-      "Sistem File"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Manajemen Proses",
+        "subbab": [
+          {"nama": "Process State dan Process Control Block (PCB)", "is_completed": false},
+          {"nama": "Penjadwalan CPU (FCFS, SJF, Round Robin)", "is_completed": false},
+          {"nama": "Sinkronisasi Proses dan Deadlock", "is_completed": false},
+          {"nama": "Thread dan Multithreading", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Manajemen Memori",
+        "subbab": [
+          {"nama": "Alokasi Memori (Contiguous, Paging, Segmentation)", "is_completed": false},
+          {"nama": "Virtual Memory dan Demand Paging", "is_completed": false},
+          {"nama": "Algoritma Page Replacement (FIFO, LRU, Optimal)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Sistem File",
+        "subbab": [
+          {"nama": "Struktur Direktori dan Organisasi File", "is_completed": false},
+          {"nama": "Metode Alokasi Disk (Contiguous, Linked, Indexed)", "is_completed": false},
+          {"nama": "File System (FAT, NTFS, ext4)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_04",
@@ -45,11 +109,32 @@
     "semester_asal": 3,
     "sks_total": 3,
     "topik_inti": [
-      "OSI Layer",
-      "TCP/IP Protocol",
-      "Routing & Switching"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "OSI Layer",
+        "subbab": [
+          {"nama": "Fungsi 7 Layer OSI Model", "is_completed": false},
+          {"nama": "Enkapsulasi dan Dekapsulasi Data", "is_completed": false},
+          {"nama": "Perbandingan OSI vs TCP/IP Model", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "TCP/IP Protocol",
+        "subbab": [
+          {"nama": "IP Addressing dan Subnetting (IPv4/IPv6)", "is_completed": false},
+          {"nama": "TCP vs UDP (Three-Way Handshake)", "is_completed": false},
+          {"nama": "DNS, DHCP, dan HTTP/HTTPS", "is_completed": false},
+          {"nama": "NAT dan Port Forwarding", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Routing & Switching",
+        "subbab": [
+          {"nama": "Static vs Dynamic Routing", "is_completed": false},
+          {"nama": "Protokol Routing (RIP, OSPF, BGP)", "is_completed": false},
+          {"nama": "VLAN dan Inter-VLAN Routing", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_05",
@@ -58,11 +143,32 @@
     "semester_asal": 3,
     "sks_total": 3,
     "topik_inti": [
-      "ERD & Relational Model",
-      "SQL Fundamental",
-      "Normalisasi"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "ERD & Relational Model",
+        "subbab": [
+          {"nama": "Entitas, Atribut, dan Relationship", "is_completed": false},
+          {"nama": "Kardinalitas (1:1, 1:N, M:N)", "is_completed": false},
+          {"nama": "Mapping ERD ke Tabel Relasional", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "SQL Fundamental",
+        "subbab": [
+          {"nama": "DDL (CREATE, ALTER, DROP)", "is_completed": false},
+          {"nama": "DML (SELECT, INSERT, UPDATE, DELETE)", "is_completed": false},
+          {"nama": "JOIN (INNER, LEFT, RIGHT, FULL)", "is_completed": false},
+          {"nama": "Subquery dan Aggregate Functions", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Normalisasi",
+        "subbab": [
+          {"nama": "Functional Dependency", "is_completed": false},
+          {"nama": "1NF, 2NF, 3NF, dan BCNF", "is_completed": false},
+          {"nama": "Denormalisasi dan Trade-off Performa", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_06",
@@ -71,11 +177,32 @@
     "semester_asal": 3,
     "sks_total": 3,
     "topik_inti": [
-      "Class & Object",
-      "Inheritance & Polymorphism",
-      "Encapsulation"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Class & Object",
+        "subbab": [
+          {"nama": "Definisi Class, Object, dan Constructor", "is_completed": false},
+          {"nama": "Atribut dan Method", "is_completed": false},
+          {"nama": "Access Modifier (public, private, protected)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Inheritance & Polymorphism",
+        "subbab": [
+          {"nama": "Single dan Multilevel Inheritance", "is_completed": false},
+          {"nama": "Method Overriding dan Overloading", "is_completed": false},
+          {"nama": "Abstract Class dan Interface", "is_completed": false},
+          {"nama": "Dynamic Binding dan Polimorfisme Runtime", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Encapsulation",
+        "subbab": [
+          {"nama": "Getter dan Setter", "is_completed": false},
+          {"nama": "Data Hiding dan Information Hiding", "is_completed": false},
+          {"nama": "Prinsip SOLID (Single Responsibility, Open-Closed)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_07",
@@ -84,11 +211,32 @@
     "semester_asal": 3,
     "sks_total": 3,
     "topik_inti": [
-      "HTML/CSS/JS Dasar",
-      "Backend API Development",
-      "Database Integration"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "HTML/CSS/JS Dasar",
+        "subbab": [
+          {"nama": "Struktur HTML5 Semantik", "is_completed": false},
+          {"nama": "CSS Layouting (Flexbox, Grid)", "is_completed": false},
+          {"nama": "JavaScript DOM Manipulation", "is_completed": false},
+          {"nama": "Responsive Design dan Media Queries", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Backend API Development",
+        "subbab": [
+          {"nama": "RESTful API Design (GET, POST, PUT, DELETE)", "is_completed": false},
+          {"nama": "Middleware dan Routing", "is_completed": false},
+          {"nama": "Authentication (JWT, Session-based)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Database Integration",
+        "subbab": [
+          {"nama": "ORM dan Query Builder", "is_completed": false},
+          {"nama": "CRUD Operations dari Backend", "is_completed": false},
+          {"nama": "Migration dan Seeding Database", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_08",
@@ -97,11 +245,32 @@
     "semester_asal": 4,
     "sks_total": 3,
     "topik_inti": [
-      "Mobile UI Layout",
-      "State Management",
-      "API Consumption"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Mobile UI Layout",
+        "subbab": [
+          {"nama": "Widget Tree dan Component-Based UI", "is_completed": false},
+          {"nama": "Layout Builder (Row, Column, Stack)", "is_completed": false},
+          {"nama": "Navigation dan Routing Antar Screen", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "State Management",
+        "subbab": [
+          {"nama": "Local State vs Global State", "is_completed": false},
+          {"nama": "State Management Pattern (Provider, BLoC, Redux)", "is_completed": false},
+          {"nama": "Reactive Programming dan Stream", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "API Consumption",
+        "subbab": [
+          {"nama": "HTTP Client dan REST API Call", "is_completed": false},
+          {"nama": "JSON Parsing dan Serialization", "is_completed": false},
+          {"nama": "Offline Storage (SQLite, SharedPreferences)", "is_completed": false},
+          {"nama": "Error Handling dan Loading State", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_09",
@@ -110,11 +279,32 @@
     "semester_asal": 4,
     "sks_total": 2,
     "topik_inti": [
-      "SDLC",
-      "Agile & Scrum",
-      "Software Testing"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "SDLC",
+        "subbab": [
+          {"nama": "Model Waterfall dan V-Model", "is_completed": false},
+          {"nama": "Model Iteratif dan Spiral", "is_completed": false},
+          {"nama": "Fase Requirement, Design, Implementation, Testing", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Agile & Scrum",
+        "subbab": [
+          {"nama": "Prinsip Agile Manifesto", "is_completed": false},
+          {"nama": "Scrum Roles (Product Owner, Scrum Master, Dev Team)", "is_completed": false},
+          {"nama": "Sprint Planning, Daily Standup, Retrospective", "is_completed": false},
+          {"nama": "Kanban Board dan User Stories", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Software Testing",
+        "subbab": [
+          {"nama": "Unit Testing dan Integration Testing", "is_completed": false},
+          {"nama": "Black-Box vs White-Box Testing", "is_completed": false},
+          {"nama": "Test-Driven Development (TDD)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_10",
@@ -123,11 +313,32 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Requirement Engineering",
-      "UML Modeling",
-      "System Architecture"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Requirement Engineering",
+        "subbab": [
+          {"nama": "Elicitation (Wawancara, Observasi, Kuesioner)", "is_completed": false},
+          {"nama": "Functional vs Non-Functional Requirements", "is_completed": false},
+          {"nama": "Software Requirement Specification (SRS)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "UML Modeling",
+        "subbab": [
+          {"nama": "Use Case Diagram dan Skenario", "is_completed": false},
+          {"nama": "Class Diagram dan Sequence Diagram", "is_completed": false},
+          {"nama": "Activity Diagram dan State Diagram", "is_completed": false},
+          {"nama": "Component dan Deployment Diagram", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "System Architecture",
+        "subbab": [
+          {"nama": "Arsitektur Monolitik vs Microservices", "is_completed": false},
+          {"nama": "Design Pattern (MVC, MVP, MVVM)", "is_completed": false},
+          {"nama": "Layered Architecture dan Clean Architecture", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_11",
@@ -136,11 +347,31 @@
     "semester_asal": 4,
     "sks_total": 2,
     "topik_inti": [
-      "Platform Ecosystems",
-      "Cross-Platform Dev",
-      "Platform APIs"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Platform Ecosystems",
+        "subbab": [
+          {"nama": "Ekosistem Android (Android SDK, Gradle)", "is_completed": false},
+          {"nama": "Ekosistem iOS (Xcode, Swift)", "is_completed": false},
+          {"nama": "Ekosistem Web (Node.js, Browser APIs)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Cross-Platform Dev",
+        "subbab": [
+          {"nama": "Framework Cross-Platform (Flutter, React Native)", "is_completed": false},
+          {"nama": "Shared Codebase vs Platform-Specific Code", "is_completed": false},
+          {"nama": "Build dan Deployment Multi-Platform", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Platform APIs",
+        "subbab": [
+          {"nama": "Akses Kamera, GPS, dan Sensor", "is_completed": false},
+          {"nama": "Push Notification dan Background Services", "is_completed": false},
+          {"nama": "Permission Handling dan Platform Guidelines", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_12",
@@ -149,11 +380,31 @@
     "semester_asal": 4,
     "sks_total": 2,
     "topik_inti": [
-      "Human Factors",
-      "Interaction Design",
-      "Usability Testing"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Human Factors",
+        "subbab": [
+          {"nama": "Persepsi Visual dan Kognitif Pengguna", "is_completed": false},
+          {"nama": "Model Mental dan Affordance", "is_completed": false},
+          {"nama": "Ergonomi dan Aksesibilitas (WCAG)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Interaction Design",
+        "subbab": [
+          {"nama": "Prinsip Desain (Nielsen's 10 Heuristics)", "is_completed": false},
+          {"nama": "Pola Interaksi (Direct Manipulation, Menu Selection)", "is_completed": false},
+          {"nama": "Prototyping (Low-Fidelity & High-Fidelity)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Usability Testing",
+        "subbab": [
+          {"nama": "Metode Evaluasi (Think Aloud, Heuristic Evaluation)", "is_completed": false},
+          {"nama": "Metrik Usability (Effectiveness, Efficiency, Satisfaction)", "is_completed": false},
+          {"nama": "A/B Testing dan User Feedback Analysis", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_13",
@@ -162,11 +413,32 @@
     "semester_asal": 6,
     "sks_total": 3,
     "topik_inti": [
-      "User Research",
-      "Wireframing",
-      "High-Fidelity Design"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "User Research",
+        "subbab": [
+          {"nama": "User Persona dan Empathy Map", "is_completed": false},
+          {"nama": "User Journey Mapping", "is_completed": false},
+          {"nama": "Competitive Analysis dan Benchmarking", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Wireframing",
+        "subbab": [
+          {"nama": "Sketching dan Low-Fidelity Wireframe", "is_completed": false},
+          {"nama": "Information Architecture dan Sitemap", "is_completed": false},
+          {"nama": "Interactive Wireframe dengan Tools (Figma, Balsamiq)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "High-Fidelity Design",
+        "subbab": [
+          {"nama": "Design System dan Style Guide", "is_completed": false},
+          {"nama": "Tipografi, Warna, dan Visual Hierarchy", "is_completed": false},
+          {"nama": "Micro-interactions dan Motion Design", "is_completed": false},
+          {"nama": "Handoff ke Developer (Inspect Mode, Design Tokens)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_14",
@@ -175,11 +447,31 @@
     "semester_asal": 4,
     "sks_total": 3,
     "topik_inti": [
-      "Search Algorithms",
-      "Knowledge Representation",
-      "Expert Systems"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Search Algorithms",
+        "subbab": [
+          {"nama": "Uninformed Search (BFS, DFS, Uniform Cost)", "is_completed": false},
+          {"nama": "Informed Search (A*, Greedy Best-First)", "is_completed": false},
+          {"nama": "Adversarial Search (Minimax, Alpha-Beta Pruning)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Knowledge Representation",
+        "subbab": [
+          {"nama": "Logika Predikat (First-Order Logic)", "is_completed": false},
+          {"nama": "Semantic Network dan Ontology", "is_completed": false},
+          {"nama": "Frame dan Production Rules", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Expert Systems",
+        "subbab": [
+          {"nama": "Arsitektur Expert System (Knowledge Base, Inference Engine)", "is_completed": false},
+          {"nama": "Forward Chaining dan Backward Chaining", "is_completed": false},
+          {"nama": "Certainty Factor dan Fuzzy Logic", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_15",
@@ -188,11 +480,32 @@
     "semester_asal": 4,
     "sks_total": 2,
     "topik_inti": [
-      "Supervised Learning",
-      "Unsupervised Learning",
-      "Model Evaluation"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Supervised Learning",
+        "subbab": [
+          {"nama": "Regresi Linear dan Logistik", "is_completed": false},
+          {"nama": "Decision Tree dan Random Forest", "is_completed": false},
+          {"nama": "Support Vector Machine (SVM)", "is_completed": false},
+          {"nama": "K-Nearest Neighbors (KNN)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Unsupervised Learning",
+        "subbab": [
+          {"nama": "K-Means Clustering", "is_completed": false},
+          {"nama": "Hierarchical Clustering (Agglomerative, Divisive)", "is_completed": false},
+          {"nama": "Principal Component Analysis (PCA)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Model Evaluation",
+        "subbab": [
+          {"nama": "Confusion Matrix (Accuracy, Precision, Recall, F1)", "is_completed": false},
+          {"nama": "Cross-Validation (K-Fold, Stratified)", "is_completed": false},
+          {"nama": "Overfitting, Underfitting, dan Regularisasi", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_16",
@@ -201,11 +514,31 @@
     "semester_asal": 6,
     "sks_total": 2,
     "topik_inti": [
-      "Text Preprocessing",
-      "Word Embeddings",
-      "Sequence Models"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Text Preprocessing",
+        "subbab": [
+          {"nama": "Tokenisasi dan Case Folding", "is_completed": false},
+          {"nama": "Stopword Removal dan Stemming/Lemmatization", "is_completed": false},
+          {"nama": "TF-IDF dan Bag of Words", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Word Embeddings",
+        "subbab": [
+          {"nama": "Word2Vec (CBOW dan Skip-gram)", "is_completed": false},
+          {"nama": "GloVe dan FastText", "is_completed": false},
+          {"nama": "Contextual Embeddings (ELMo, BERT)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Sequence Models",
+        "subbab": [
+          {"nama": "Recurrent Neural Network (RNN) dan LSTM", "is_completed": false},
+          {"nama": "Attention Mechanism dan Transformer", "is_completed": false},
+          {"nama": "Aplikasi: Sentiment Analysis dan Named Entity Recognition", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_17",
@@ -214,11 +547,32 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Association Rules",
-      "Clustering",
-      "Classification"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Association Rules",
+        "subbab": [
+          {"nama": "Support, Confidence, dan Lift", "is_completed": false},
+          {"nama": "Algoritma Apriori", "is_completed": false},
+          {"nama": "FP-Growth dan Frequent Itemset Mining", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Clustering",
+        "subbab": [
+          {"nama": "K-Means dan K-Medoids", "is_completed": false},
+          {"nama": "DBSCAN (Density-Based Clustering)", "is_completed": false},
+          {"nama": "Evaluasi Clustering (Silhouette Score, Davies-Bouldin)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Classification",
+        "subbab": [
+          {"nama": "Naive Bayes Classifier", "is_completed": false},
+          {"nama": "Decision Tree (ID3, C4.5)", "is_completed": false},
+          {"nama": "Neural Network untuk Klasifikasi", "is_completed": false},
+          {"nama": "Evaluasi Model (ROC Curve, AUC)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_18",
@@ -227,11 +581,32 @@
     "semester_asal": 6,
     "sks_total": 3,
     "topik_inti": [
-      "Data Visualization",
-      "Statistical Analysis",
-      "Predictive Modeling"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Data Visualization",
+        "subbab": [
+          {"nama": "Prinsip Visual Encoding (Posisi, Warna, Ukuran)", "is_completed": false},
+          {"nama": "Chart Types (Bar, Line, Scatter, Heatmap)", "is_completed": false},
+          {"nama": "Dashboard Interaktif (Tableau, Matplotlib, D3.js)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Statistical Analysis",
+        "subbab": [
+          {"nama": "Statistik Deskriptif (Mean, Median, Std Dev)", "is_completed": false},
+          {"nama": "Uji Hipotesis (t-test, chi-square, ANOVA)", "is_completed": false},
+          {"nama": "Korelasi dan Regresi Statistik", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Predictive Modeling",
+        "subbab": [
+          {"nama": "Feature Engineering dan Selection", "is_completed": false},
+          {"nama": "Pipeline Data Science (EDA, Modeling, Evaluation)", "is_completed": false},
+          {"nama": "Model Deployment dan Monitoring", "is_completed": false},
+          {"nama": "Ensemble Methods (Bagging, Boosting, Stacking)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_19",
@@ -240,11 +615,32 @@
     "semester_asal": 6,
     "sks_total": 3,
     "topik_inti": [
-      "Hadoop Ecosystem",
-      "Spark Processing",
-      "NoSQL Databases"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Hadoop Ecosystem",
+        "subbab": [
+          {"nama": "HDFS (Hadoop Distributed File System)", "is_completed": false},
+          {"nama": "MapReduce Programming Model", "is_completed": false},
+          {"nama": "YARN Resource Management", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Spark Processing",
+        "subbab": [
+          {"nama": "RDD, DataFrame, dan Dataset API", "is_completed": false},
+          {"nama": "Spark SQL dan Structured Streaming", "is_completed": false},
+          {"nama": "MLlib untuk Machine Learning Terdistribusi", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "NoSQL Databases",
+        "subbab": [
+          {"nama": "Document Store (MongoDB)", "is_completed": false},
+          {"nama": "Key-Value Store (Redis) dan Column-Family (Cassandra)", "is_completed": false},
+          {"nama": "Graph Database (Neo4j)", "is_completed": false},
+          {"nama": "CAP Theorem dan Konsistensi Eventual", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_20",
@@ -253,11 +649,31 @@
     "semester_asal": 4,
     "sks_total": 3,
     "topik_inti": [
-      "Image Enhancement",
-      "Image Segmentation",
-      "Morphological Processing"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Image Enhancement",
+        "subbab": [
+          {"nama": "Histogram Equalization dan Contrast Stretching", "is_completed": false},
+          {"nama": "Spatial Filtering (Smoothing, Sharpening)", "is_completed": false},
+          {"nama": "Frequency Domain Filtering (Fourier Transform)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Image Segmentation",
+        "subbab": [
+          {"nama": "Thresholding (Global, Adaptive, Otsu)", "is_completed": false},
+          {"nama": "Edge Detection (Sobel, Canny, Laplacian)", "is_completed": false},
+          {"nama": "Region-Based Segmentation (Region Growing, Watershed)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Morphological Processing",
+        "subbab": [
+          {"nama": "Operasi Dasar (Erosion, Dilation)", "is_completed": false},
+          {"nama": "Opening, Closing, dan Hit-or-Miss Transform", "is_completed": false},
+          {"nama": "Morphological Gradient dan Skeleton", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_21",
@@ -266,11 +682,32 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Object Detection",
-      "Image Classification",
-      "Face Recognition"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Object Detection",
+        "subbab": [
+          {"nama": "Feature Extraction (SIFT, SURF, HOG)", "is_completed": false},
+          {"nama": "YOLO dan SSD (Single-Stage Detectors)", "is_completed": false},
+          {"nama": "Faster R-CNN (Two-Stage Detector)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Image Classification",
+        "subbab": [
+          {"nama": "Convolutional Neural Network (CNN) Basics", "is_completed": false},
+          {"nama": "Arsitektur Populer (VGG, ResNet, Inception)", "is_completed": false},
+          {"nama": "Transfer Learning dan Fine-Tuning", "is_completed": false},
+          {"nama": "Data Augmentation untuk Citra", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Face Recognition",
+        "subbab": [
+          {"nama": "Face Detection (Haar Cascade, MTCNN)", "is_completed": false},
+          {"nama": "Face Embedding (FaceNet, ArcFace)", "is_completed": false},
+          {"nama": "Face Verification vs Face Identification", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_22",
@@ -279,11 +716,32 @@
     "semester_asal": 6,
     "sks_total": 3,
     "topik_inti": [
-      "IaaS/PaaS/SaaS",
-      "Virtualization",
-      "Cloud Deployment"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "IaaS/PaaS/SaaS",
+        "subbab": [
+          {"nama": "Definisi dan Perbandingan Model Layanan Cloud", "is_completed": false},
+          {"nama": "Provider (AWS, GCP, Azure) dan Layanannya", "is_completed": false},
+          {"nama": "Shared Responsibility Model", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Virtualization",
+        "subbab": [
+          {"nama": "Hypervisor (Type 1 vs Type 2)", "is_completed": false},
+          {"nama": "Container dan Docker (Image, Container, Registry)", "is_completed": false},
+          {"nama": "Orchestration dengan Kubernetes", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Cloud Deployment",
+        "subbab": [
+          {"nama": "CI/CD Pipeline (GitHub Actions, Jenkins)", "is_completed": false},
+          {"nama": "Serverless Computing (AWS Lambda, Cloud Functions)", "is_completed": false},
+          {"nama": "Auto Scaling dan Load Balancing", "is_completed": false},
+          {"nama": "Infrastructure as Code (Terraform, CloudFormation)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_23",
@@ -292,11 +750,32 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Microcontrollers",
-      "Sensors & Actuators",
-      "IoT Protocols"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Microcontrollers",
+        "subbab": [
+          {"nama": "Arsitektur Mikrokontroler (Arduino, ESP32)", "is_completed": false},
+          {"nama": "GPIO, PWM, dan ADC", "is_completed": false},
+          {"nama": "Pemrograman Embedded (C/C++ untuk MCU)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Sensors & Actuators",
+        "subbab": [
+          {"nama": "Sensor (Suhu, Kelembaban, Jarak, PIR)", "is_completed": false},
+          {"nama": "Aktuator (Motor Servo, Relay, LED)", "is_completed": false},
+          {"nama": "Interfacing dan Kalibrasi Sensor", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "IoT Protocols",
+        "subbab": [
+          {"nama": "MQTT dan Publish-Subscribe Pattern", "is_completed": false},
+          {"nama": "CoAP dan HTTP untuk IoT", "is_completed": false},
+          {"nama": "LoRa, Zigbee, dan Bluetooth Low Energy", "is_completed": false},
+          {"nama": "IoT Cloud Platform (ThingsBoard, AWS IoT Core)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_24",
@@ -305,11 +784,32 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Kriptografi Dasar",
-      "Network Security",
-      "Access Control"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Kriptografi Dasar",
+        "subbab": [
+          {"nama": "Symmetric Encryption (AES, DES)", "is_completed": false},
+          {"nama": "Asymmetric Encryption (RSA, ECC)", "is_completed": false},
+          {"nama": "Hashing (SHA-256, MD5) dan Digital Signature", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Network Security",
+        "subbab": [
+          {"nama": "Firewall dan Intrusion Detection System (IDS)", "is_completed": false},
+          {"nama": "SSL/TLS dan HTTPS", "is_completed": false},
+          {"nama": "Serangan Jaringan (DDoS, MITM, Spoofing)", "is_completed": false},
+          {"nama": "VPN dan Tunneling Protocol", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Access Control",
+        "subbab": [
+          {"nama": "Authentication vs Authorization", "is_completed": false},
+          {"nama": "Model Access Control (DAC, MAC, RBAC)", "is_completed": false},
+          {"nama": "OAuth 2.0 dan Multi-Factor Authentication", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_25",
@@ -318,11 +818,32 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Parallel Architectures",
-      "OpenMP & MPI",
-      "GPU Programming"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Parallel Architectures",
+        "subbab": [
+          {"nama": "Taxonomi Flynn (SISD, SIMD, MISD, MIMD)", "is_completed": false},
+          {"nama": "Shared Memory vs Distributed Memory", "is_completed": false},
+          {"nama": "Amdahl's Law dan Gustafson's Law", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "OpenMP & MPI",
+        "subbab": [
+          {"nama": "OpenMP Directives (Parallel, For, Critical)", "is_completed": false},
+          {"nama": "MPI Communication (Send, Recv, Broadcast, Reduce)", "is_completed": false},
+          {"nama": "Desain Algoritma Paralel (Decomposition, Mapping)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "GPU Programming",
+        "subbab": [
+          {"nama": "Arsitektur GPU dan CUDA Cores", "is_completed": false},
+          {"nama": "CUDA Programming Model (Kernel, Thread, Block)", "is_completed": false},
+          {"nama": "Memory Hierarchy GPU (Global, Shared, Local)", "is_completed": false},
+          {"nama": "Aplikasi GPU Computing (Deep Learning, Simulasi)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_26",
@@ -331,11 +852,32 @@
     "semester_asal": 6,
     "sks_total": 3,
     "topik_inti": [
-      "Kinematics",
-      "Motion Planning",
-      "Robotic Sensors"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Kinematics",
+        "subbab": [
+          {"nama": "Forward Kinematics (Denavit-Hartenberg)", "is_completed": false},
+          {"nama": "Inverse Kinematics", "is_completed": false},
+          {"nama": "Degrees of Freedom dan Workspace Analysis", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Motion Planning",
+        "subbab": [
+          {"nama": "Path Planning (RRT, PRM, A*)", "is_completed": false},
+          {"nama": "Obstacle Avoidance dan Collision Detection", "is_completed": false},
+          {"nama": "Trajectory Planning dan Control", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Robotic Sensors",
+        "subbab": [
+          {"nama": "LiDAR dan Point Cloud Processing", "is_completed": false},
+          {"nama": "Sensor IMU (Accelerometer, Gyroscope)", "is_completed": false},
+          {"nama": "Sensor Fusion dan Kalman Filter", "is_completed": false},
+          {"nama": "SLAM (Simultaneous Localization and Mapping)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_27",
@@ -344,11 +886,32 @@
     "semester_asal": 6,
     "sks_total": 3,
     "topik_inti": [
-      "3D Modeling",
-      "Spatial Computing",
-      "Interaction in VR"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "3D Modeling",
+        "subbab": [
+          {"nama": "Primitif 3D dan Mesh Modeling", "is_completed": false},
+          {"nama": "UV Mapping dan Texturing untuk AR/VR", "is_completed": false},
+          {"nama": "Optimasi Model (LOD, Polygon Reduction)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Spatial Computing",
+        "subbab": [
+          {"nama": "Plane Detection dan Surface Tracking", "is_completed": false},
+          {"nama": "Spatial Anchors dan World Mapping", "is_completed": false},
+          {"nama": "Marker-Based vs Markerless AR", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Interaction in VR",
+        "subbab": [
+          {"nama": "Controller Input dan Hand Tracking", "is_completed": false},
+          {"nama": "Locomotion Techniques (Teleportation, Walking)", "is_completed": false},
+          {"nama": "Haptic Feedback dan Immersion Design", "is_completed": false},
+          {"nama": "VR Sickness dan Comfort Guidelines", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_28",
@@ -357,11 +920,32 @@
     "semester_asal": 4,
     "sks_total": 3,
     "topik_inti": [
-      "Dasar Animasi",
-      "Rendering 3D",
-      "Rigging & Texturing"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Dasar Animasi",
+        "subbab": [
+          {"nama": "12 Prinsip Animasi (Disney)", "is_completed": false},
+          {"nama": "Keyframe Animation dan Interpolasi", "is_completed": false},
+          {"nama": "Timeline, Easing, dan Motion Curves", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Rendering 3D",
+        "subbab": [
+          {"nama": "Pipeline Rendering (Vertex, Rasterization, Fragment)", "is_completed": false},
+          {"nama": "Material dan Shader (Phong, PBR)", "is_completed": false},
+          {"nama": "Lighting (Directional, Point, Spot, Ambient)", "is_completed": false},
+          {"nama": "Ray Tracing vs Rasterization", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Rigging & Texturing",
+        "subbab": [
+          {"nama": "Bone System dan Skeleton Rigging", "is_completed": false},
+          {"nama": "Skinning (Weight Painting, Blend Shapes)", "is_completed": false},
+          {"nama": "Texture Mapping (Diffuse, Normal, Specular Map)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_29",
@@ -370,11 +954,31 @@
     "semester_asal": 5,
     "sks_total": 2,
     "topik_inti": [
-      "Project Planning",
-      "Risk Management",
-      "Cost Estimation"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Project Planning",
+        "subbab": [
+          {"nama": "Work Breakdown Structure (WBS)", "is_completed": false},
+          {"nama": "Gantt Chart dan Critical Path Method (CPM)", "is_completed": false},
+          {"nama": "Resource Allocation dan Scheduling", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Risk Management",
+        "subbab": [
+          {"nama": "Identifikasi dan Analisis Risiko", "is_completed": false},
+          {"nama": "Risk Register dan Probability-Impact Matrix", "is_completed": false},
+          {"nama": "Strategi Mitigasi dan Contingency Plan", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Cost Estimation",
+        "subbab": [
+          {"nama": "Teknik Estimasi (Analogous, Parametric, Bottom-Up)", "is_completed": false},
+          {"nama": "Earned Value Management (EVM)", "is_completed": false},
+          {"nama": "Budgeting dan Cost Control", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_30",
@@ -383,11 +987,32 @@
     "semester_asal": 6,
     "sks_total": 2,
     "topik_inti": [
-      "Formulasi Masalah",
-      "Kajian Pustaka",
-      "Metode Eksperimen"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Formulasi Masalah",
+        "subbab": [
+          {"nama": "Identifikasi Gap Penelitian", "is_completed": false},
+          {"nama": "Rumusan Masalah dan Pertanyaan Penelitian", "is_completed": false},
+          {"nama": "Hipotesis dan Variabel Penelitian", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Kajian Pustaka",
+        "subbab": [
+          {"nama": "Systematic Literature Review (SLR)", "is_completed": false},
+          {"nama": "Teknik Pencarian dan Seleksi Paper", "is_completed": false},
+          {"nama": "Sitasi dan Referensi (APA, IEEE Format)", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Metode Eksperimen",
+        "subbab": [
+          {"nama": "Desain Eksperimen (Pre-Experimental, Quasi, True)", "is_completed": false},
+          {"nama": "Pengumpulan dan Pengolahan Data", "is_completed": false},
+          {"nama": "Validitas dan Reliabilitas Instrumen", "is_completed": false},
+          {"nama": "Analisis Hasil dan Interpretasi Data", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_31",
@@ -396,11 +1021,31 @@
     "semester_asal": 7,
     "sks_total": 2,
     "topik_inti": [
-      "HAKI",
-      "Cyberlaw",
-      "Profesionalisme"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "HAKI",
+        "subbab": [
+          {"nama": "Hak Cipta Software dan Lisensi (GPL, MIT, Apache)", "is_completed": false},
+          {"nama": "Paten Teknologi dan Trade Secret", "is_completed": false},
+          {"nama": "Plagiarisme dan Etika Penggunaan Karya Digital", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Cyberlaw",
+        "subbab": [
+          {"nama": "UU ITE dan Regulasi Siber Indonesia", "is_completed": false},
+          {"nama": "Perlindungan Data Pribadi (UU PDP, GDPR)", "is_completed": false},
+          {"nama": "Cybercrime dan Digital Forensics Dasar", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Profesionalisme",
+        "subbab": [
+          {"nama": "Kode Etik Profesi IT (ACM, IEEE Code of Ethics)", "is_completed": false},
+          {"nama": "Sertifikasi Profesional IT", "is_completed": false},
+          {"nama": "Tanggung Jawab Sosial dan Etika AI", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_32",
@@ -409,11 +1054,32 @@
     "semester_asal": 7,
     "sks_total": 3,
     "topik_inti": [
-      "Project Proposal",
-      "System Implementation",
-      "Testing & QA"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Project Proposal",
+        "subbab": [
+          {"nama": "Analisis Kebutuhan dan Studi Kelayakan", "is_completed": false},
+          {"nama": "Penentuan Scope dan Deliverables", "is_completed": false},
+          {"nama": "Timeline, Milestone, dan Resource Planning", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "System Implementation",
+        "subbab": [
+          {"nama": "Arsitektur Sistem dan Tech Stack Selection", "is_completed": false},
+          {"nama": "Version Control dan Collaborative Development (Git)", "is_completed": false},
+          {"nama": "Backend-Frontend Integration", "is_completed": false},
+          {"nama": "Deployment dan DevOps Pipeline", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Testing & QA",
+        "subbab": [
+          {"nama": "Test Plan dan Test Case Design", "is_completed": false},
+          {"nama": "Automated Testing (Unit, Integration, E2E)", "is_completed": false},
+          {"nama": "User Acceptance Testing (UAT)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_33",
@@ -422,11 +1088,31 @@
     "semester_asal": 7,
     "sks_total": 4,
     "topik_inti": [
-      "Pemberdayaan Masyarakat",
-      "Observasi Lapangan",
-      "Pelaksanaan Program"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Pemberdayaan Masyarakat",
+        "subbab": [
+          {"nama": "Identifikasi Potensi dan Masalah Masyarakat", "is_completed": false},
+          {"nama": "Perancangan Program Berbasis Teknologi Tepat Guna", "is_completed": false},
+          {"nama": "Pelatihan dan Transfer Pengetahuan", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Observasi Lapangan",
+        "subbab": [
+          {"nama": "Survei Kondisi Sosial-Ekonomi dan Infrastruktur", "is_completed": false},
+          {"nama": "Analisis SWOT Lingkungan Setempat", "is_completed": false},
+          {"nama": "Wawancara dan Pengumpulan Data Primer", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Pelaksanaan Program",
+        "subbab": [
+          {"nama": "Implementasi Solusi Teknologi di Lapangan", "is_completed": false},
+          {"nama": "Monitoring dan Evaluasi Program", "is_completed": false},
+          {"nama": "Dokumentasi dan Penyusunan Laporan KKN", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_34",
@@ -435,11 +1121,31 @@
     "semester_asal": 7,
     "sks_total": 1,
     "topik_inti": [
-      "Penyusunan Proposal",
-      "Presentasi Akademik",
-      "Metode Riset"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Penyusunan Proposal",
+        "subbab": [
+          {"nama": "Struktur Proposal (Latar Belakang, Tujuan, Metodologi)", "is_completed": false},
+          {"nama": "Penulisan Tinjauan Pustaka dan State of the Art", "is_completed": false},
+          {"nama": "Rancangan Sistem dan Arsitektur Solusi", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Presentasi Akademik",
+        "subbab": [
+          {"nama": "Teknik Presentasi Ilmiah yang Efektif", "is_completed": false},
+          {"nama": "Desain Slide dan Visual Communication", "is_completed": false},
+          {"nama": "Menghadapi Sesi Tanya Jawab dan Kritik", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Metode Riset",
+        "subbab": [
+          {"nama": "Pendekatan Kuantitatif vs Kualitatif", "is_completed": false},
+          {"nama": "Teknik Sampling dan Penentuan Populasi", "is_completed": false},
+          {"nama": "Tools Riset (SPSS, Python, Weka)", "is_completed": false}
+        ]
+      }
+    ]
   },
   {
     "id": "materi_35",
@@ -448,10 +1154,30 @@
     "semester_asal": 5,
     "sks_total": 3,
     "topik_inti": [
-      "Pengenalan Industri",
-      "Implementasi Skill",
-      "Laporan Magang"
-    ],
-    "is_completed": false
+      {
+        "nama_bab": "Pengenalan Industri",
+        "subbab": [
+          {"nama": "Struktur Organisasi dan Workflow Perusahaan IT", "is_completed": false},
+          {"nama": "Budaya Kerja dan Profesionalisme di Industri", "is_completed": false},
+          {"nama": "Tools dan Teknologi yang Digunakan Industri", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Implementasi Skill",
+        "subbab": [
+          {"nama": "Penerapan Ilmu Akademik di Proyek Nyata", "is_completed": false},
+          {"nama": "Kolaborasi Tim dan Agile di Lingkungan Kerja", "is_completed": false},
+          {"nama": "Problem Solving dan Debugging di Production", "is_completed": false}
+        ]
+      },
+      {
+        "nama_bab": "Laporan Magang",
+        "subbab": [
+          {"nama": "Dokumentasi Aktivitas dan Logbook Harian", "is_completed": false},
+          {"nama": "Analisis Kontribusi dan Pencapaian", "is_completed": false},
+          {"nama": "Penyusunan Laporan Akhir Kerja Praktek", "is_completed": false}
+        ]
+      }
+    ]
   }
 ]
