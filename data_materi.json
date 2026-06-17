@@ -1,0 +1,457 @@
+[
+  {
+    "id": "materi_01",
+    "level": 1,
+    "nama_mk": "Matematika Diskrit",
+    "semester_asal": 3,
+    "sks_total": 3,
+    "topik_inti": [
+      "Logika Proposisional",
+      "Teori Himpunan",
+      "Graf dan Pohon"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_02",
+    "level": 1,
+    "nama_mk": "Kompleksitas Algoritma",
+    "semester_asal": 3,
+    "sks_total": 3,
+    "topik_inti": [
+      "Analisis Asimptotik",
+      "Notasi Big-O",
+      "Divide and Conquer"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_03",
+    "level": 1,
+    "nama_mk": "Sistem Operasi",
+    "semester_asal": 3,
+    "sks_total": 2,
+    "topik_inti": [
+      "Manajemen Proses",
+      "Manajemen Memori",
+      "Sistem File"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_04",
+    "level": 1,
+    "nama_mk": "Jaringan Komputer",
+    "semester_asal": 3,
+    "sks_total": 3,
+    "topik_inti": [
+      "OSI Layer",
+      "TCP/IP Protocol",
+      "Routing & Switching"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_05",
+    "level": 1,
+    "nama_mk": "Basis Data",
+    "semester_asal": 3,
+    "sks_total": 3,
+    "topik_inti": [
+      "ERD & Relational Model",
+      "SQL Fundamental",
+      "Normalisasi"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_06",
+    "level": 2,
+    "nama_mk": "Pemrograman Berorientasi Obyek",
+    "semester_asal": 3,
+    "sks_total": 3,
+    "topik_inti": [
+      "Class & Object",
+      "Inheritance & Polymorphism",
+      "Encapsulation"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_07",
+    "level": 2,
+    "nama_mk": "Desain dan Pemrograman Web",
+    "semester_asal": 3,
+    "sks_total": 3,
+    "topik_inti": [
+      "HTML/CSS/JS Dasar",
+      "Backend API Development",
+      "Database Integration"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_08",
+    "level": 2,
+    "nama_mk": "Pemrograman Mobile",
+    "semester_asal": 4,
+    "sks_total": 3,
+    "topik_inti": [
+      "Mobile UI Layout",
+      "State Management",
+      "API Consumption"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_09",
+    "level": 2,
+    "nama_mk": "Rekayasa Perangkat Lunak",
+    "semester_asal": 4,
+    "sks_total": 2,
+    "topik_inti": [
+      "SDLC",
+      "Agile & Scrum",
+      "Software Testing"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_10",
+    "level": 2,
+    "nama_mk": "Analisis dan Desain Perangkat Lunak",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Requirement Engineering",
+      "UML Modeling",
+      "System Architecture"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_11",
+    "level": 2,
+    "nama_mk": "Pemrograman Berbasis Platform",
+    "semester_asal": 4,
+    "sks_total": 2,
+    "topik_inti": [
+      "Platform Ecosystems",
+      "Cross-Platform Dev",
+      "Platform APIs"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_12",
+    "level": 2,
+    "nama_mk": "Interaksi Manusia dan Komputer",
+    "semester_asal": 4,
+    "sks_total": 2,
+    "topik_inti": [
+      "Human Factors",
+      "Interaction Design",
+      "Usability Testing"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_13",
+    "level": 2,
+    "nama_mk": "Antar Muka dan Pengalaman Pengguna",
+    "semester_asal": 6,
+    "sks_total": 3,
+    "topik_inti": [
+      "User Research",
+      "Wireframing",
+      "High-Fidelity Design"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_14",
+    "level": 3,
+    "nama_mk": "Kecerdasan Buatan",
+    "semester_asal": 4,
+    "sks_total": 3,
+    "topik_inti": [
+      "Search Algorithms",
+      "Knowledge Representation",
+      "Expert Systems"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_15",
+    "level": 3,
+    "nama_mk": "Pembelajaran Mesin",
+    "semester_asal": 4,
+    "sks_total": 2,
+    "topik_inti": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Model Evaluation"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_16",
+    "level": 3,
+    "nama_mk": "Pemrosesan Bahasa Alami",
+    "semester_asal": 6,
+    "sks_total": 2,
+    "topik_inti": [
+      "Text Preprocessing",
+      "Word Embeddings",
+      "Sequence Models"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_17",
+    "level": 3,
+    "nama_mk": "Penambangan Data",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Association Rules",
+      "Clustering",
+      "Classification"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_18",
+    "level": 3,
+    "nama_mk": "Ilmu Data",
+    "semester_asal": 6,
+    "sks_total": 3,
+    "topik_inti": [
+      "Data Visualization",
+      "Statistical Analysis",
+      "Predictive Modeling"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_19",
+    "level": 3,
+    "nama_mk": "Big Data",
+    "semester_asal": 6,
+    "sks_total": 3,
+    "topik_inti": [
+      "Hadoop Ecosystem",
+      "Spark Processing",
+      "NoSQL Databases"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_20",
+    "level": 3,
+    "nama_mk": "Pengolahan Citra Digital",
+    "semester_asal": 4,
+    "sks_total": 3,
+    "topik_inti": [
+      "Image Enhancement",
+      "Image Segmentation",
+      "Morphological Processing"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_21",
+    "level": 3,
+    "nama_mk": "Visi Komputer",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Object Detection",
+      "Image Classification",
+      "Face Recognition"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_22",
+    "level": 4,
+    "nama_mk": "Komputasi Awan",
+    "semester_asal": 6,
+    "sks_total": 3,
+    "topik_inti": [
+      "IaaS/PaaS/SaaS",
+      "Virtualization",
+      "Cloud Deployment"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_23",
+    "level": 4,
+    "nama_mk": "Internet Of Things",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Microcontrollers",
+      "Sensors & Actuators",
+      "IoT Protocols"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_24",
+    "level": 4,
+    "nama_mk": "Keamanan Data dan Informasi",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Kriptografi Dasar",
+      "Network Security",
+      "Access Control"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_25",
+    "level": 4,
+    "nama_mk": "Komputasi Paralel dan Terdistribusi",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Parallel Architectures",
+      "OpenMP & MPI",
+      "GPU Programming"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_26",
+    "level": 4,
+    "nama_mk": "Robotika",
+    "semester_asal": 6,
+    "sks_total": 3,
+    "topik_inti": [
+      "Kinematics",
+      "Motion Planning",
+      "Robotic Sensors"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_27",
+    "level": 4,
+    "nama_mk": "Pengembangan AR dan VR",
+    "semester_asal": 6,
+    "sks_total": 3,
+    "topik_inti": [
+      "3D Modeling",
+      "Spatial Computing",
+      "Interaction in VR"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_28",
+    "level": 4,
+    "nama_mk": "Animasi dan Pemodelan 3D",
+    "semester_asal": 4,
+    "sks_total": 3,
+    "topik_inti": [
+      "Dasar Animasi",
+      "Rendering 3D",
+      "Rigging & Texturing"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_29",
+    "level": 5,
+    "nama_mk": "Manajemen Proyek Teknologi Informasi",
+    "semester_asal": 5,
+    "sks_total": 2,
+    "topik_inti": [
+      "Project Planning",
+      "Risk Management",
+      "Cost Estimation"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_30",
+    "level": 5,
+    "nama_mk": "Metodologi Penelitian",
+    "semester_asal": 6,
+    "sks_total": 2,
+    "topik_inti": [
+      "Formulasi Masalah",
+      "Kajian Pustaka",
+      "Metode Eksperimen"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_31",
+    "level": 5,
+    "nama_mk": "Etika dan Profesi",
+    "semester_asal": 7,
+    "sks_total": 2,
+    "topik_inti": [
+      "HAKI",
+      "Cyberlaw",
+      "Profesionalisme"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_32",
+    "level": 5,
+    "nama_mk": "Proyek Perangkat Lunak (Capstone Project)",
+    "semester_asal": 7,
+    "sks_total": 3,
+    "topik_inti": [
+      "Project Proposal",
+      "System Implementation",
+      "Testing & QA"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_33",
+    "level": 5,
+    "nama_mk": "Kuliah Kerja Nyata",
+    "semester_asal": 7,
+    "sks_total": 4,
+    "topik_inti": [
+      "Pemberdayaan Masyarakat",
+      "Observasi Lapangan",
+      "Pelaksanaan Program"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_34",
+    "level": 5,
+    "nama_mk": "Seminar Proposal",
+    "semester_asal": 7,
+    "sks_total": 1,
+    "topik_inti": [
+      "Penyusunan Proposal",
+      "Presentasi Akademik",
+      "Metode Riset"
+    ],
+    "is_completed": false
+  },
+  {
+    "id": "materi_35",
+    "level": 5,
+    "nama_mk": "Kerja Praktek / Magang",
+    "semester_asal": 5,
+    "sks_total": 3,
+    "topik_inti": [
+      "Pengenalan Industri",
+      "Implementasi Skill",
+      "Laporan Magang"
+    ],
+    "is_completed": false
+  }
+]

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tracker Percepatan Belajar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modern scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #404040;
+        }
+        
+        /* Smooth locking/unlocking transitions */
+        .level-locked {
+            filter: grayscale(1) blur(2px);
+            opacity: 0.4;
+            pointer-events: none;
+            user-select: none;
+        }
+        .level-section {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen selection:bg-brand-500 selection:text-white antialiased">
+
+    <!-- Header Section -->
+    <header class="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+                <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent sm:text-3xl">
+                    Web Tracker Percepatan Belajar
+                </h1>
+                <p class="text-xs sm:text-sm text-neutral-400 mt-1">Speedrun Kurikulum Teknik Informatika Semester 3 - 7 dalam 2 Bulan</p>
+            </div>
+            
+            <!-- Global Progress Bar Card -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-4 flex flex-col min-w-[280px] md:min-w-[320px] shadow-lg shadow-neutral-950/50">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-semibold text-neutral-300">Global Progress</span>
+                    <span id="global-percentage" class="text-lg font-bold text-sky-400">0%</span>
+                </div>
+                <div class="w-full bg-neutral-800 rounded-full h-2.5 overflow-hidden">
+                    <div id="global-progress-bar" class="bg-gradient-to-r from-sky-400 to-indigo-500 h-full rounded-full transition-all duration-500 ease-out" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center mt-2 text-[11px] text-neutral-500">
+                    <span id="global-count">0 / 0 Topik</span>
+                    <span id="global-courses-count">0 / 0 Matkul Selesai</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Quick Stats & Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="bg-neutral-900/40 border border-neutral-900 rounded-xl p-4 flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-sky-500/10 text-sky-400">
+                    <!-- Graduation Cap Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg>
+                </div>
+                <div>
+                    <div class="text-xs text-neutral-500">Total SKS Kurikulum</div>
+                    <div class="text-lg font-bold text-neutral-200" id="stat-total-sks">0 SKS</div>
+                </div>
+            </div>
+            <div class="bg-neutral-900/40 border border-neutral-900 rounded-xl p-4 flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-indigo-500/10 text-indigo-400">
+                    <!-- Book Open Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </div>
+                <div>
+                    <div class="text-xs text-neutral-500">Jumlah Mata Kuliah</div>
+                    <div class="text-lg font-bold text-neutral-200" id="stat-total-mk">0 MK</div>
+                </div>
+            </div>
+            <div class="bg-neutral-900/40 border border-neutral-900 rounded-xl p-4 flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400">
+                    <!-- Lock Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                </div>
+                <div>
+                    <div class="text-xs text-neutral-500">Aturan Unlock Level</div>
+                    <div class="text-sm font-semibold text-neutral-300">Min. 80% Level Sebelumnya</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Levels Containers -->
+        <div class="space-y-12">
+            
+            <!-- LEVEL 1 -->
+            <section id="level-container-1" class="level-section">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-neutral-800 pb-4 mb-6 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-sky-500/10 text-sky-400 rounded-full text-xs font-bold border border-sky-500/20">Level 1</span>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-200">Pondasi & Infrastruktur</h2>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-24 sm:w-32 bg-neutral-850 rounded-full h-2 overflow-hidden">
+                            <div id="level-progress-bar-1" class="bg-sky-400 h-full rounded-full transition-all duration-350" style="width: 0%"></div>
+                        </div>
+                        <span id="level-percentage-1" class="text-xs font-semibold text-neutral-400">0%</span>
+                    </div>
+                </div>
+                <div id="level-grid-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Cards will be rendered here -->
+                </div>
+            </section>
+
+            <!-- LEVEL 2 -->
+            <section id="level-container-2" class="level-section">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-neutral-800 pb-4 mb-6 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-sky-500/10 text-sky-400 rounded-full text-xs font-bold border border-sky-500/20">Level 2</span>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-200">Software Engineering & UI</h2>
+                        <span id="lock-badge-2" class="text-neutral-500 flex items-center gap-1 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" /></svg>
+                            Terkunci (Min. 80% Lvl 1)
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-24 sm:w-32 bg-neutral-850 rounded-full h-2 overflow-hidden">
+                            <div id="level-progress-bar-2" class="bg-sky-400 h-full rounded-full transition-all duration-350" style="width: 0%"></div>
+                        </div>
+                        <span id="level-percentage-2" class="text-xs font-semibold text-neutral-400">0%</span>
+                    </div>
+                </div>
+                <div id="level-grid-2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Cards will be rendered here -->
+                </div>
+            </section>
+
+            <!-- LEVEL 3 -->
+            <section id="level-container-3" class="level-section">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-neutral-800 pb-4 mb-6 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-sky-500/10 text-sky-400 rounded-full text-xs font-bold border border-sky-500/20">Level 3</span>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-200">AI & Data</h2>
+                        <span id="lock-badge-3" class="text-neutral-500 flex items-center gap-1 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" /></svg>
+                            Terkunci (Min. 80% Lvl 2)
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-24 sm:w-32 bg-neutral-850 rounded-full h-2 overflow-hidden">
+                            <div id="level-progress-bar-3" class="bg-sky-400 h-full rounded-full transition-all duration-350" style="width: 0%"></div>
+                        </div>
+                        <span id="level-percentage-3" class="text-xs font-semibold text-neutral-400">0%</span>
+                    </div>
+                </div>
+                <div id="level-grid-3" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Cards will be rendered here -->
+                </div>
+            </section>
+
+            <!-- LEVEL 4 -->
+            <section id="level-container-4" class="level-section">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-neutral-800 pb-4 mb-6 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-sky-500/10 text-sky-400 rounded-full text-xs font-bold border border-sky-500/20">Level 4</span>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-200">Advanced System</h2>
+                        <span id="lock-badge-4" class="text-neutral-500 flex items-center gap-1 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" /></svg>
+                            Terkunci (Min. 80% Lvl 3)
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-24 sm:w-32 bg-neutral-850 rounded-full h-2 overflow-hidden">
+                            <div id="level-progress-bar-4" class="bg-sky-400 h-full rounded-full transition-all duration-350" style="width: 0%"></div>
+                        </div>
+                        <span id="level-percentage-4" class="text-xs font-semibold text-neutral-400">0%</span>
+                    </div>
+                </div>
+                <div id="level-grid-4" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Cards will be rendered here -->
+                </div>
+            </section>
+
+            <!-- LEVEL 5 -->
+            <section id="level-container-5" class="level-section">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-neutral-800 pb-4 mb-6 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-sky-500/10 text-sky-400 rounded-full text-xs font-bold border border-sky-500/20">Level 5</span>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-200">Tahap Akhir</h2>
+                        <span id="lock-badge-5" class="text-neutral-500 flex items-center gap-1 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" /></svg>
+                            Terkunci (Min. 80% Lvl 4)
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-24 sm:w-32 bg-neutral-850 rounded-full h-2 overflow-hidden">
+                            <div id="level-progress-bar-5" class="bg-sky-400 h-full rounded-full transition-all duration-350" style="width: 0%"></div>
+                        </div>
+                        <span id="level-percentage-5" class="text-xs font-semibold text-neutral-400">0%</span>
+                    </div>
+                </div>
+                <div id="level-grid-5" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Cards will be rendered here -->
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-900 bg-neutral-950 mt-16 py-8 text-center text-xs text-neutral-600">
+        <p>© 2026 Web Tracker Percepatan Belajar. Built by UI Specialist Frontend Agent.</p>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>

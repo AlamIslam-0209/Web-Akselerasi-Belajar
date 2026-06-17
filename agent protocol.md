@@ -9,6 +9,10 @@ Dokumen ini berisi *Standard Operating Procedure* (SOP) pengerjaan dan metrik ke
 3. **[CODE]** Eksekusi kode dilakukan oleh Gemini 3.1 Pro (Backend/Data) dan Gemini 3.5 Flash (UI/Frontend).
 4. **[MICRO-TEST]** GPT-OSS 120B menerima HANYA *file* atau fungsi yang baru selesai ditulis untuk diperiksa (*linting/dry-run*).
 5. **[LOG]** Gemini 3.1 Pro (Low) mencatat hasil persetujuan ke `log.md`.
+6. **[VERSION CONTROL]** Setelah Logger mencatat progres, agent WAJIB mengeksekusi perintah terminal berikut untuk menyimpan perubahan:
+   - `git add .`
+   - `git commit -m "[NAMA_AGENT] - [Aksi yang dilakukan]"`
+   (Contoh: `git commit -m "Gemini Flash - Buat struktur awal index.html"`)
 
 ---
 
