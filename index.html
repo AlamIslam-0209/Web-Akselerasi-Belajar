@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +21,11 @@
                     },
                     colors: {
                         brand: {
-                            50: '#ecfeff',
-                            100: '#cffafe',
-                            500: '#06b6d4',
-                            600: '#0891b2',
-                            700: '#0e7490',
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
                         }
                     }
                 }
@@ -33,66 +33,68 @@
         }
     </script>
     <style>
-        /* Smooth Scroll & Scrollbar Styling */
+        /* Smooth Scroll & Pastel Scrollbar Styling */
         html {
             scroll-behavior: smooth;
-            background-color: #020205;
+            background-color: #faf7f2;
         }
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #020205;
+            background: #faf7f2;
         }
         ::-webkit-scrollbar-thumb {
-            background: #1e1b4b; /* Deep Indigo */
+            background: #e4dfd5;
             border-radius: 9999px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #312e81;
+            background: #d3ccc0;
         }
         
-        /* Modern Glassmorphism & Cyber Glows */
+        /* Soft Light Glassmorphism & Coral Glows */
         .glass-card {
-            background: rgba(10, 10, 15, 0.45);
+            background: rgba(255, 255, 255, 0.65);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.8);
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .glass-card:hover {
-            border-color: rgba(6, 182, 212, 0.3); /* Cyan Glow border */
-            box-shadow: 0 0 25px rgba(6, 182, 212, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.02);
+            border-color: rgba(251, 146, 60, 0.3); /* Soft Coral Glow border */
+            box-shadow: 0 10px 30px rgba(251, 146, 60, 0.08), inset 0 0 12px rgba(255, 255, 255, 0.5);
             transform: translateY(-2px);
         }
 
         .stat-card {
-            background: rgba(255, 255, 255, 0.01);
+            background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
         }
 
         /* Dynamic classes to be used in app.js for course cards */
         .course-card {
-            background: rgba(15, 15, 25, 0.4);
+            background: rgba(255, 255, 255, 0.75);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .course-card:hover {
             transform: translateY(-4px) scale(1.02);
-            border-color: rgba(139, 92, 246, 0.3); /* Purple Glow border */
-            box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.25),
-                        0 0 20px 0 rgba(6, 182, 212, 0.05);
+            border-color: rgba(251, 146, 60, 0.4); /* Coral border */
+            box-shadow: 0 12px 30px -10px rgba(251, 146, 60, 0.18),
+                        0 0 20px 0 rgba(251, 146, 60, 0.04);
         }
 
-        /* Section animations & level lock filter */
+        /* Section lock filter with soft pastel overlay */
         .level-locked {
-            filter: grayscale(0.85) blur(1.5px);
-            opacity: 0.35;
+            filter: grayscale(0.65) blur(1px);
+            opacity: 0.5;
             pointer-events: none;
             user-select: none;
         }
@@ -113,35 +115,35 @@
         }
     </style>
 </head>
-<body class="bg-[#020205] text-neutral-100 min-h-screen font-sans selection:bg-cyan-500/30 selection:text-cyan-200 antialiased overflow-x-hidden relative">
+<body class="bg-[#faf7f2] text-neutral-800 min-h-screen font-sans selection:bg-orange-200 selection:text-orange-950 antialiased overflow-x-hidden relative">
     
-    <!-- Background Ambient Glows -->
-    <div class="fixed top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-cyan-900/10 blur-[120px] pointer-events-none -z-10"></div>
-    <div class="fixed bottom-0 right-1/4 w-[600px] h-[600px] rounded-full bg-purple-950/10 blur-[150px] pointer-events-none -z-10"></div>
+    <!-- Background Ambient Glows (Warm Pastel) -->
+    <div class="fixed top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-orange-100/30 blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-1/4 w-[600px] h-[600px] rounded-full bg-amber-100/20 blur-[150px] pointer-events-none -z-10"></div>
 
     <!-- Header Section -->
-    <header class="border-b border-neutral-900 bg-[#020205]/75 backdrop-blur-xl sticky top-0 z-50 transition-all duration-300">
+    <header class="border-b border-neutral-200/50 bg-[#faf7f2]/75 backdrop-blur-xl sticky top-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-                <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent sm:text-3xl font-sans">
+                <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent sm:text-3xl font-sans">
                     Web Tracker Percepatan Belajar
                 </h1>
-                <p class="text-xs sm:text-sm text-neutral-400 mt-1 font-medium tracking-wide">
+                <p class="text-xs sm:text-sm text-neutral-500 mt-1 font-medium tracking-wide">
                     Speedrun Kurikulum Teknik Informatika Semester 3 - 7 dalam 2 Bulan
                 </p>
             </div>
             
-            <!-- Global Progress Bar Card (Glassmorphism + Shadow Glow) -->
-            <div class="bg-neutral-900/35 border border-white/5 backdrop-blur-md rounded-xl p-4 flex flex-col min-w-[280px] md:min-w-[320px] shadow-[0_4px_30px_rgba(0,0,0,0.4)] relative overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-fuchsia-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <!-- Global Progress Bar Card (Glassmorphism + Subtle Shadow) -->
+            <div class="bg-white/70 border border-white/80 backdrop-blur-md rounded-xl p-4 flex flex-col min-w-[280px] md:min-w-[320px] shadow-[0_8px_30px_rgba(0,0,0,0.03)] relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-r from-orange-100/5 to-amber-100/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 <div class="flex justify-between items-center mb-2 z-10">
-                    <span class="text-xs font-bold uppercase tracking-wider text-neutral-400">Global Progress</span>
-                    <span id="global-percentage" class="text-lg font-extrabold text-cyan-400 font-mono tracking-tight">0%</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-neutral-450">Global Progress</span>
+                    <span id="global-percentage" class="text-lg font-extrabold text-orange-500 font-mono tracking-tight">0%</span>
                 </div>
-                <div class="w-full bg-neutral-950/80 rounded-full h-2 overflow-hidden border border-white/[0.02] z-10">
-                    <div id="global-progress-bar" class="bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-pink-500 h-full rounded-full transition-all duration-700 ease-out" style="width: 0%"></div>
+                <div class="w-full bg-neutral-200/60 rounded-full h-2 overflow-hidden border border-white/40 z-10">
+                    <div id="global-progress-bar" class="bg-orange-350 bg-orange-400 h-full rounded-full transition-all duration-700 ease-out" style="width: 0%"></div>
                 </div>
-                <div class="flex justify-between items-center mt-2.5 text-[11px] text-neutral-500 font-medium font-mono z-10">
+                <div class="flex justify-between items-center mt-2.5 text-[11px] text-neutral-450 font-medium font-mono z-10">
                     <span id="global-count">0 / 0 Topik</span>
                     <span id="global-courses-count">0 / 0 Matkul Selesai</span>
                 </div>
@@ -154,8 +156,8 @@
         
         <!-- Quick Stats & Info (Glassmorphism Panels) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-            <div class="stat-card rounded-xl p-4 flex items-center gap-4 transition-all duration-350 hover:border-white/10">
-                <div class="p-3 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shadow-[0_0_15px_rgba(6,182,212,0.1)]">
+            <div class="stat-card rounded-xl p-4 flex items-center gap-4 transition-all duration-350 hover:border-white/90">
+                <div class="p-3 rounded-xl bg-orange-100 text-orange-600 border border-orange-200/50 shadow-[0_0_15px_rgba(249,115,22,0.05)]">
                     <!-- Graduation Cap Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -163,34 +165,34 @@
                     </svg>
                 </div>
                 <div>
-                    <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-500">Total SKS Kurikulum</div>
-                    <div class="text-lg font-extrabold text-neutral-200 font-mono mt-0.5" id="stat-total-sks">0 SKS</div>
+                    <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-450">Total SKS Kurikulum</div>
+                    <div class="text-lg font-extrabold text-neutral-700 font-mono mt-0.5" id="stat-total-sks">0 SKS</div>
                 </div>
             </div>
             
-            <div class="stat-card rounded-xl p-4 flex items-center gap-4 transition-all duration-350 hover:border-white/10">
-                <div class="p-3 rounded-xl bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20 shadow-[0_0_15px_rgba(217,70,239,0.1)]">
+            <div class="stat-card rounded-xl p-4 flex items-center gap-4 transition-all duration-350 hover:border-white/90">
+                <div class="p-3 rounded-xl bg-indigo-100 text-indigo-600 border border-indigo-200/50 shadow-[0_0_15px_rgba(99,102,241,0.05)]">
                     <!-- Book Open Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                 </div>
                 <div>
-                    <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-500">Jumlah Mata Kuliah</div>
-                    <div class="text-lg font-extrabold text-neutral-200 font-mono mt-0.5" id="stat-total-mk">0 MK</div>
+                    <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-450">Jumlah Mata Kuliah</div>
+                    <div class="text-lg font-extrabold text-neutral-700 font-mono mt-0.5" id="stat-total-mk">0 MK</div>
                 </div>
             </div>
             
-            <div class="stat-card rounded-xl p-4 flex items-center gap-4 transition-all duration-350 hover:border-white/10 sm:col-span-2 md:col-span-1">
-                <div class="p-3 rounded-xl bg-pink-500/10 text-pink-400 border border-pink-500/20 shadow-[0_0_15px_rgba(244,63,94,0.1)]">
+            <div class="stat-card rounded-xl p-4 flex items-center gap-4 transition-all duration-350 hover:border-white/90 sm:col-span-2 md:col-span-1">
+                <div class="p-3 rounded-xl bg-amber-100 text-amber-600 border border-amber-200/50 shadow-[0_0_15px_rgba(245,158,11,0.05)]">
                     <!-- Keyhole/Unlocking Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
                     </svg>
                 </div>
                 <div>
-                    <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-500">Aturan Unlock Level</div>
-                    <div class="text-xs font-semibold text-neutral-300 mt-0.5">Minimal 80% Level Sebelumnya</div>
+                    <div class="text-[10px] uppercase font-bold tracking-wider text-neutral-450">Aturan Unlock Level</div>
+                    <div class="text-xs font-semibold text-neutral-600 mt-0.5">Minimal 80% Level Sebelumnya</div>
                 </div>
             </div>
         </div>
@@ -200,18 +202,18 @@
             
             <!-- LEVEL 1 -->
             <section id="level-container-1" class="level-section glass-card rounded-2xl p-6 sm:p-8 animate-fade-in-up">
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-white/5 pb-5 mb-6 gap-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-200/60 pb-5 mb-6 gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full text-xs font-extrabold tracking-wider uppercase border border-cyan-400/20 shadow-[0_0_10px_rgba(6,182,212,0.2)]">
+                        <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-bold tracking-wide uppercase border border-teal-200 shadow-[0_2px_10px_rgba(20,184,166,0.05)]">
                             Level 1
                         </span>
-                        <h2 class="text-xl font-bold tracking-tight text-neutral-100">Pondasi & Infrastruktur</h2>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-700">Pondasi & Infrastruktur</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div class="w-28 sm:w-36 bg-neutral-950 rounded-full h-1.5 overflow-hidden border border-white/[0.02]">
-                            <div id="level-progress-bar-1" class="bg-cyan-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                        <div class="w-28 sm:w-36 bg-neutral-200/60 rounded-full h-1.5 overflow-hidden border border-white/50">
+                            <div id="level-progress-bar-1" class="bg-teal-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                         </div>
-                        <span id="level-percentage-1" class="text-xs font-bold text-cyan-400 font-mono min-w-[32px] text-right">0%</span>
+                        <span id="level-percentage-1" class="text-xs font-bold text-teal-600 font-mono min-w-[32px] text-right">0%</span>
                     </div>
                 </div>
                 <div id="level-grid-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -221,26 +223,26 @@
 
             <!-- LEVEL 2 -->
             <section id="level-container-2" class="level-section glass-card rounded-2xl p-6 sm:p-8 animate-fade-in-up">
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-white/5 pb-5 mb-6 gap-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-200/60 pb-5 mb-6 gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full text-xs font-extrabold tracking-wider uppercase border border-blue-400/20 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-bold tracking-wide uppercase border border-indigo-200 shadow-[0_2px_10px_rgba(99,102,241,0.05)]">
                             Level 2
                         </span>
-                        <h2 class="text-xl font-bold tracking-tight text-neutral-100">Software Engineering & UI</h2>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-700">Software Engineering & UI</h2>
                         
                         <!-- Lock Badge Custom -->
-                        <span id="lock-badge-2" class="text-neutral-500 bg-neutral-900/60 border border-white/5 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-medium tracking-wide">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-neutral-400" viewBox="0 0 20 20" fill="currentColor">
+                        <span id="lock-badge-2" class="text-amber-800 bg-amber-100/80 border border-amber-200/50 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-semibold tracking-wide">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-amber-600" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
                             </svg>
                             Terkunci (Min. 80% Lvl 1)
                         </span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div class="w-28 sm:w-36 bg-neutral-950 rounded-full h-1.5 overflow-hidden border border-white/[0.02]">
-                            <div id="level-progress-bar-2" class="bg-blue-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                        <div class="w-28 sm:w-36 bg-neutral-200/60 rounded-full h-1.5 overflow-hidden border border-white/50">
+                            <div id="level-progress-bar-2" class="bg-indigo-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                         </div>
-                        <span id="level-percentage-2" class="text-xs font-bold text-blue-400 font-mono min-w-[32px] text-right">0%</span>
+                        <span id="level-percentage-2" class="text-xs font-bold text-indigo-600 font-mono min-w-[32px] text-right">0%</span>
                     </div>
                 </div>
                 <div id="level-grid-2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -250,26 +252,26 @@
 
             <!-- LEVEL 3 -->
             <section id="level-container-3" class="level-section glass-card rounded-2xl p-6 sm:p-8 animate-fade-in-up">
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-white/5 pb-5 mb-6 gap-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-200/60 pb-5 mb-6 gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="px-3 py-1 bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white rounded-full text-xs font-extrabold tracking-wider uppercase border border-purple-400/20 shadow-[0_0_10px_rgba(168,85,247,0.2)]">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-bold tracking-wide uppercase border border-orange-200 shadow-[0_2px_10px_rgba(249,115,22,0.05)]">
                             Level 3
                         </span>
-                        <h2 class="text-xl font-bold tracking-tight text-neutral-100">AI & Data</h2>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-700">AI & Data</h2>
                         
                         <!-- Lock Badge Custom -->
-                        <span id="lock-badge-3" class="text-neutral-500 bg-neutral-900/60 border border-white/5 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-medium tracking-wide">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-neutral-400" viewBox="0 0 20 20" fill="currentColor">
+                        <span id="lock-badge-3" class="text-amber-800 bg-amber-100/80 border border-amber-200/50 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-semibold tracking-wide">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-amber-600" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
                             </svg>
                             Terkunci (Min. 80% Lvl 2)
                         </span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div class="w-28 sm:w-36 bg-neutral-950 rounded-full h-1.5 overflow-hidden border border-white/[0.02]">
-                            <div id="level-progress-bar-3" class="bg-purple-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                        <div class="w-28 sm:w-36 bg-neutral-200/60 rounded-full h-1.5 overflow-hidden border border-white/50">
+                            <div id="level-progress-bar-3" class="bg-orange-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                         </div>
-                        <span id="level-percentage-3" class="text-xs font-bold text-purple-400 font-mono min-w-[32px] text-right">0%</span>
+                        <span id="level-percentage-3" class="text-xs font-bold text-orange-600 font-mono min-w-[32px] text-right">0%</span>
                     </div>
                 </div>
                 <div id="level-grid-3" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -279,26 +281,26 @@
 
             <!-- LEVEL 4 -->
             <section id="level-container-4" class="level-section glass-card rounded-2xl p-6 sm:p-8 animate-fade-in-up">
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-white/5 pb-5 mb-6 gap-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-200/60 pb-5 mb-6 gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="px-3 py-1 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white rounded-full text-xs font-extrabold tracking-wider uppercase border border-fuchsia-400/20 shadow-[0_0_10px_rgba(217,70,239,0.2)]">
+                        <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-bold tracking-wide uppercase border border-rose-200 shadow-[0_2px_10px_rgba(244,63,94,0.05)]">
                             Level 4
                         </span>
-                        <h2 class="text-xl font-bold tracking-tight text-neutral-100">Advanced System</h2>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-700">Advanced System</h2>
                         
                         <!-- Lock Badge Custom -->
-                        <span id="lock-badge-4" class="text-neutral-500 bg-neutral-900/60 border border-white/5 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-medium tracking-wide">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-neutral-400" viewBox="0 0 20 20" fill="currentColor">
+                        <span id="lock-badge-4" class="text-amber-800 bg-amber-100/80 border border-amber-200/50 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-semibold tracking-wide">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-amber-600" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
                             </svg>
                             Terkunci (Min. 80% Lvl 3)
                         </span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div class="w-28 sm:w-36 bg-neutral-950 rounded-full h-1.5 overflow-hidden border border-white/[0.02]">
-                            <div id="level-progress-bar-4" class="bg-fuchsia-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                        <div class="w-28 sm:w-36 bg-neutral-200/60 rounded-full h-1.5 overflow-hidden border border-white/50">
+                            <div id="level-progress-bar-4" class="bg-rose-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                         </div>
-                        <span id="level-percentage-4" class="text-xs font-bold text-fuchsia-400 font-mono min-w-[32px] text-right">0%</span>
+                        <span id="level-percentage-4" class="text-xs font-bold text-rose-600 font-mono min-w-[32px] text-right">0%</span>
                     </div>
                 </div>
                 <div id="level-grid-4" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -308,26 +310,26 @@
 
             <!-- LEVEL 5 -->
             <section id="level-container-5" class="level-section glass-card rounded-2xl p-6 sm:p-8 animate-fade-in-up">
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-white/5 pb-5 mb-6 gap-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-200/60 pb-5 mb-6 gap-4">
                     <div class="flex items-center gap-3">
-                        <span class="px-3 py-1 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full text-xs font-extrabold tracking-wider uppercase border border-pink-400/20 shadow-[0_0_10px_rgba(244,63,94,0.2)]">
+                        <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold tracking-wide uppercase border border-emerald-200 shadow-[0_2px_10px_rgba(16,185,129,0.05)]">
                             Level 5
                         </span>
-                        <h2 class="text-xl font-bold tracking-tight text-neutral-100">Tahap Akhir</h2>
+                        <h2 class="text-xl font-bold tracking-tight text-neutral-700">Tahap Akhir</h2>
                         
                         <!-- Lock Badge Custom -->
-                        <span id="lock-badge-5" class="text-neutral-500 bg-neutral-900/60 border border-white/5 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-medium tracking-wide">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-neutral-400" viewBox="0 0 20 20" fill="currentColor">
+                        <span id="lock-badge-5" class="text-amber-800 bg-amber-100/80 border border-amber-200/50 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-xs font-semibold tracking-wide">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-amber-600" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
                             </svg>
                             Terkunci (Min. 80% Lvl 4)
                         </span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div class="w-28 sm:w-36 bg-neutral-950 rounded-full h-1.5 overflow-hidden border border-white/[0.02]">
-                            <div id="level-progress-bar-5" class="bg-pink-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                        <div class="w-28 sm:w-36 bg-neutral-200/60 rounded-full h-1.5 overflow-hidden border border-white/50">
+                            <div id="level-progress-bar-5" class="bg-emerald-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                         </div>
-                        <span id="level-percentage-5" class="text-xs font-bold text-pink-400 font-mono min-w-[32px] text-right">0%</span>
+                        <span id="level-percentage-5" class="text-xs font-bold text-emerald-600 font-mono min-w-[32px] text-right">0%</span>
                     </div>
                 </div>
                 <div id="level-grid-5" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -340,7 +342,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-neutral-900 bg-[#020205] mt-24 py-8 text-center text-xs text-neutral-600 font-medium tracking-wide">
+    <footer class="border-t border-neutral-200 bg-[#faf7f2] mt-24 py-8 text-center text-xs text-neutral-500 font-medium tracking-wide">
         <p>© 2026 Web Tracker Percepatan Belajar. Built by UI Specialist Frontend Agent.</p>
     </footer>
 
