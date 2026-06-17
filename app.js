@@ -37,15 +37,8 @@ function renderCards(data) {
             const isChecked = progressData[topicId] ? 'checked' : '';
             return `
                 <label class="flex items-start gap-2.5 cursor-pointer group/label">
-                    <div class="relative flex items-center justify-center mt-0.5 shrink-0">
-                        <input type="checkbox" id="checkbox_${topicId}" data-course="${course.id}" data-topic="${topicId}" class="peer sr-only topic-checkbox" ${isChecked}>
-                        <div class="w-5 h-5 rounded border-2 border-neutral-300 bg-white peer-checked:bg-orange-500 peer-checked:border-orange-500 transition-colors flex items-center justify-center shadow-sm group-hover/label:border-orange-400">
-                            <svg class="w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
-                        </div>
-                    </div>
-                    <span class="text-sm text-neutral-600 font-medium leading-tight peer-checked:text-neutral-400 peer-checked:line-through transition-all select-none pt-0.5">
+                    <input type="checkbox" id="checkbox_${topicId}" data-course="${course.id}" data-topic="${topicId}" class="peer topic-checkbox" ${isChecked}>
+                    <span class="text-sm text-neutral-600 font-medium leading-tight peer-checked:text-neutral-450 peer-checked:line-through transition-all select-none pt-0.5">
                         ${topic}
                     </span>
                 </label>
